@@ -1,0 +1,9 @@
+s = input()
+count = 0
+total = 0
+for i in s :
+    tarchar = ord(i) - ord('a')
+    diff = abs(tarchar - count)
+    total += min(diff, 26 - diff)
+    count = tarchar
+print(total)
