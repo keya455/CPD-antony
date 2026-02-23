@@ -1,0 +1,15 @@
+n = int(input())
+s = input().upper()
+count = 0
+dcount = 0
+for i in (s):
+  if i == "A":
+    count += 1
+  elif i == "D":
+    dcount += 1
+if count > dcount:
+      print("Anton")
+elif count < dcount:
+        print("Danik")
+elif count == dcount:
+        print("Friendship")
